@@ -10,7 +10,7 @@ In this repository there are three main codes,
 
 * vv.py : velocity Verlet like algorithm that propagates the generalized Langevin equation [see J. Chem. Phys. 139, 044107 (2013)]. 
 
-There is a input file: input.txt that takes in 4 parameters: (1) Number of trajectories (INT) (2) Photon frequency ω$_c$ (FLOAT) in a.u. (3) Light-matter coupling η in a.u. and (4) Solvent friction parameter $a$ such that solvent friction is η$_s$ = $a \cdot$  ω$_b$. 
+There is a input file: input.txt that takes in 4 parameters: (1) Number of trajectories (INT) (2) Photon frequency $\omega_c$ (FLOAT) in a.u. (3) Light-matter coupling η in a.u. and (4) Solvent friction parameter $a$ such that solvent friction is $\eta_s$ = $a \cdot$  $\omega_b$. 
 
 Directly running the following code in the terminal works.
 ```
