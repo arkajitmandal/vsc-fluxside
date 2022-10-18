@@ -45,13 +45,14 @@ def init(param):
 
     # All mode frequencies
     ω = np.zeros((ndof))
+    σx = np.zeros((ndof))
     ω[1] = param.ωc        # 1 --> Cavity
 
-    σx = (1/ (β * ω**2.0) ) ** 0.5
+    σx[1:] = (1/ (β * ω[1:]**2.0) ) ** 0.5
     σp = (1/β)**0.5 
     #-------- Nuclear DOF ----------
     x = np.zeros(ndof)
-    x[0]  = 0.0           # Nuclear DOF
+    x[0]  = 0.0            # Nuclear DOF
     x[1]  = gran(0, σx[1]) # Cavity DOF 
     #-------------------------------
     p =  gran(0,σp,ndof)
