@@ -82,7 +82,7 @@ class param:
         self.m = np.ones(self.ndof) 
 
         self.t =  4200 * 80 
-        self.dt = 25.0
+        self.dt = 10.0
         self.χ  = self.ωc * η
         self.traj = 1
 
