@@ -2,7 +2,8 @@
 
 Here a molecular system, described with a symmetric double well potential, is coupled to a unstructured dissipative solvent environment (described by Debye spectral density) a cavity radiation mode which is also coupled to a dissipative environment (described by Debye spectral density).
 
-Requires : Python 3, numpy 
+Requires (no additional installation): Python 3, numpy 
+This has been tested on M1 macs and Ht-condor based systems.
 
 In this repository there are three main codes,
 
