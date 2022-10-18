@@ -10,7 +10,7 @@ In this repository there are three main codes,
 
 * vv.py : velocity Verlet like algorithm that propagates the generalized Langevin equation [see J. Chem. Phys. 139, 044107 (2013)]. 
 
-There is a input file: input.txt that takes in 4 parameters: (1) Number of trajectories (INT) (2) Photon frequency ω$_c$ (FLOAT) in a.u. (3) Light-matter coupling η in a.u. and (4) Solvent friction parameter a such that solvent friction is η$_s$ = a * ω$_b$. 
+There is a input file: input.txt that takes in 4 parameters: (1) Number of trajectories (INT) (2) Photon frequency ω$_c$ (FLOAT) in a.u. (3) Light-matter coupling η in a.u. and (4) Solvent friction parameter $a$ such that solvent friction is η$_s$ = $a \cdot$  ω$_b$. 
 
 Directly running the following code in the terminal works.
 ```
@@ -20,4 +20,6 @@ python main.py
 Additional scripts are provided for parallelizing the program in ht-condor based systems,
 
 * scan-bath.py : submits jobs for a range of bath parameters with no coupling to the cavity (generates the Kramers Turnover) 
-* scan-wc.py
+* scan-wc.py : Computes transmission coefficient for a range of photon frequencies $\omega_c$. 
+
+The script 'gather_scans.py' can be used to gather all the transmission coefficient with respect to photon frequency or bath coupling (using 'scan-wc.py' or 'scan-bath.py'). 
