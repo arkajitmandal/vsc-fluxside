@@ -2,6 +2,8 @@
 
 Here a molecular system, described with a symmetric double well potential, is coupled to a unstructured dissipative solvent environment (described by Debye spectral density) a cavity radiation mode which is also coupled to a dissipative environment (described by Debye spectral density).
 
+Requires : Python 3, numpy 
+
 In this repository there are three main codes,
 
 * main.py : propgates the dynamics and computes the transmission coefficient. Creates a 'fs.txt' file with two column :time, transmission coefficient. 
