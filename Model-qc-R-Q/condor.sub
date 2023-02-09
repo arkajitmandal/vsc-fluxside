@@ -1,0 +1,21 @@
++SingularityImage = "stash:///osgconnect/protected/arkajitmandal/my-container-v1.sif"
+
+executable  = condor.sh
+
+#---- Python File -------
+pyFile  = main.py 
+#------------------------
+
+Arguments = $(pyFile) $(jobs)
+
+transfer_input_files =   $(pyFile), vv.py, model.py, input.txt  
+
+log    = log/job.log
+error  = log/job.err
+output = log/job.out
+
+request_cpus    = 1 
+request_memory  = 2GB
+request_disk    = 1GB
+
+queue jobs from submit.dat

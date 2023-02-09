@@ -26,3 +26,10 @@ Additional scripts are provided for parallelizing the program in ht-condor based
 * scan-wc.py : Computes transmission coefficient for a range of photon frequencies $\omega_c$. 
 
 The script 'gather_scans.py' can be used to gather all the transmission coefficient with respect to photon frequency or bath coupling (using 'scan-wc.py' or 'scan-bath.py'). 
+
+## Other Model
+
+For other model systems such as qc-R-Q or qc-Q-R see the folders 'Model-qc-R-Q' and 'Model-qc-Q-R' which has the same file structure as the one discussed above. 
+
+## IR
+Finally find the IR code in the 'IR' folder. Running the 'main.py' create the R(t)R correlation function. A code 'ftir.py' is provided that can produce the final fourier transformed IR spectrum. 
