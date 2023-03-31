@@ -1,3 +1,7 @@
+[![DOI](https://zenodo.org/badge/553673903.svg)](https://zenodo.org/badge/latestdoi/553673903)
+
+
+
 # Flux-Side code to obtain transmission coefficient 
 
 Here a molecular system, described with a symmetric double well potential, is coupled to a unstructured dissipative solvent environment (described by Debye spectral density) a cavity radiation mode which is also coupled to a dissipative environment (described by Debye spectral density).
